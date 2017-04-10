@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="../styles/saturnStyle.css">
+<div id="main">
+	<h1>Saturn</h1>
+	<img class="animated lightSpeedIn img-responsive" ng-click="$ctrl.displayText()"
+	     src="https://i.imgsafe.org/d014ad8ab1.png"/>
+
+	<div ng-show="$ctrl.show" class="box text animated zoomInUp" ng-click="$ctrl.stop()">
+		{{$ctrl.text}}
+	</div>
+</div>
+<saturn2 class="box2 text2  animated flipInY" ng-show="$ctrl.show"></saturn2>

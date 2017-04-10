@@ -1,0 +1,39 @@
+.box {
+    width: 30vw;
+    min-height: 35vh;
+    height: auto;
+    background-color: #0f0f0f;
+    position: relative;
+    right: 7%;
+    max-height: 70vh;
+    margin-top: 2%;
+    border-radius: 2%;
+    border: solid 2px coral;
+
+}
+
+#main {
+    margin-left: 35%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 40.2%;
+}
+
+.text {
+    color: white;
+    padding: 2%;
+    font-size: 25px;
+}
+
+video {
+    position: absolute;
+    top: 10%;
+}
+
+h1 {
+    color: red;
+    margin-left: 35%;
+}

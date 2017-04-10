@@ -1,0 +1,15 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="../styles/venusStyle.css">
+<div id="main">
+	<h1>Venus</h1>
+	<img ng-mouseover="{'background-image':'gray','font-size':'20px'}" ng-click="$ctrl.displayText()"
+	     class="animated bounceInRight img-responsive" src="http://nineplanets.org/images/venus.jpg"/>
+
+
+	<div ng-show="$ctrl.show" class="box text animated fadeIn">
+
+		{{$ctrl.text}}
+
+	</div>
+</div>
+<venus2 class="box2 text2  animated slideInUp" ng-show="$ctrl.show"></venus2>

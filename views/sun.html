@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="./styles/sunStyle.css">
+<h1>The Sun</h1>
+<div id="main">
+
+	<div><img class="animated rollIn img-responsive" ng-click="$ctrl.displayText()"
+	          src="http://nineplanets.org/images/thesun.jpg"/>
+	</div>
+	<text>
+		<div ng-show="$ctrl.show" class="box text animated slideInUp">
+			{{$ctrl.text}}
+
+		</div>
+	</text>
+</div>
