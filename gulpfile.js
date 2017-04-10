@@ -6,6 +6,8 @@ let gulp = require('gulp')
     , cachebust = new CacheBuster()
     , print = require('gulp-print')
     , babel = require('gulp-babel')
+    , es2015 = require('babel-preset-es2015')
+
 // , uglify = require('gulp-uglify')
 
 gulp.task('build-css', function () {

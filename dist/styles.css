@@ -1,0 +1,485 @@
+.dude {
+  height: 28%;
+  width: 12%;
+  position: fixed;
+  animation-name: imgAnimate1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
+
+@keyframes imgAnimate1 {
+  0% {
+    bottom: 60vh;
+    right: 2vw; }
+  20% {
+    bottom: 35vh;
+    right: 12vw; }
+  40% {
+    bottom: 50vh;
+    right: 2vw; }
+  80% {
+    bottom: 10vh;
+    right: 13vw; }
+  100% {
+    bottom: 10vh;
+    right: 1vw; } }
+
+.box {
+  width: 30vw;
+  min-height: 35vh;
+  height: auto;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 6%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px blue; }
+
+.box2 {
+  width: 20vw;
+  height: auto;
+  min-height: 72vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px blue; }
+
+#main {
+  margin-left: 35%; }
+
+#main h1 {
+  color: #00b0ff; }
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 40.2%; }
+
+.text {
+  color: white;
+  padding: 2%;
+  font-size: 25px; }
+
+.text2 {
+  color: #00ffe9;
+  padding: 2%;
+  font-size: 25px; }
+
+video {
+  border-radius: 1%;
+  border: 2px solid darkblue; }
+
+.box {
+  width: 32vw;
+  height: auto;
+  min-height: 34vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px darkred; }
+
+.box2 {
+  width: 21vw;
+  height: auto;
+  min-height: 80vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px darkred; }
+
+#main {
+  margin-left: 35%; }
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 40.2%; }
+
+#main h1 {
+  color: #B71C1C; }
+
+.text {
+  color: white;
+  padding: 2%;
+  font-size: 25px; }
+
+.text2 {
+  color: coral;
+  padding: 2%;
+  font-size: 25px; }
+
+.box {
+  width: 32vw;
+  height: auto;
+  min-height: 34vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px orangered; }
+
+.box2 {
+  width: 21vw;
+  height: auto;
+  min-height: 76vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px orangered; }
+
+#main {
+  margin-left: 35%; }
+
+#main h1 {
+  color: #f50057; }
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 40.2%; }
+
+.text {
+  color: white;
+  padding: 1.5%;
+  font-size: 25px; }
+
+.text2 {
+  color: #C21F39;
+  padding: 1.5%;
+  font-size: 25px; }
+
+.box {
+  width: 34vw;
+  height: auto;
+  min-height: 38vh;
+  background-color: #0f0f0f;
+  position: relative;
+  max-height: inherit;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px silver; }
+
+.box2 {
+  width: 20vw;
+  height: auto;
+  background-color: #0f0f0f;
+  position: absolute;
+  min-height: 81vh;
+  max-height: inherit;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px silver; }
+
+#main {
+  margin-left: 35%; }
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 40.2%; }
+
+.text {
+  color: white;
+  padding: 2%;
+  font-size: 25px; }
+
+.text2 {
+  color: #ABF2D6;
+  padding: 2%;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  margin-left: 35%;
+  color: #fdfcfc; }
+
+.box {
+  width: 28vw;
+  height: auto;
+  min-height: 41vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  max-height: 75vh;
+  border-radius: 2%;
+  border: solid 2px #1b6d85; }
+
+.box2 {
+  width: 22vw;
+  height: auto;
+  min-height: 83vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  max-height: 100%;
+  border-radius: 2%;
+  border: solid 2px #1b6d85; }
+
+#main {
+  margin-left: 35%; }
+
+#main h1 {
+  color: #00b0ff; }
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 40.2%; }
+
+.text {
+  color: white;
+  padding: 2%;
+  font-size: 25px; }
+
+.text2 {
+  color: #42A5F5;
+  padding: 2%;
+  font-size: 24px;
+  font-family: 'Baloo Bhaina', cursive; }
+
+.box {
+  width: 30vw;
+  height: auto;
+  min-height: 41vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px yellowgreen; }
+
+.box2 {
+  width: 22vw;
+  height: auto;
+  min-height: 75vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px yellowgreen; }
+
+#main {
+  margin-left: 35%; }
+
+#main h1 {
+  color: #89be50; }
+
+#main img {
+  height: 50%;
+  width: 50%;
+  margin-right: 10%; }
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 40.2%; }
+
+.text {
+  color: white;
+  padding: 2%;
+  font-size: 25px; }
+
+.text2 {
+  color: #007E33;
+  padding: 2%;
+  font-size: 25px;
+  font-family: "Helvetica Neue", "Open Sans", sans-serif; }
+
+img {
+  position: absolute;
+  top: 20%;
+  right: 37%; }
+
+body {
+  background-image: url("../image/Space Images in high resolution for free High Definition Backgrounds ....jpg");
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 2px blue; }
+
+li {
+  display: inline;
+  font-size: 31px;
+  font-family: FontAwesome, bold; }
+
+li a {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+li a:hover {
+  background-color: #BBDEFB; }
+
+.active {
+  color: #990000;
+  font-size: 33px;
+  text-decoration: underline; }
+
+.active:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3); }
+
+.box {
+  width: 30vw;
+  min-height: 35vh;
+  height: auto;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  max-height: 70vh;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px coral; }
+
+#main {
+  margin-left: 35%; }
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 40.2%; }
+
+.text {
+  color: white;
+  padding: 2%;
+  font-size: 25px; }
+
+video {
+  position: absolute;
+  top: 10%; }
+
+h1 {
+  color: red;
+  margin-left: 35%; }
+
+.box {
+  width: 30vw;
+  height: auto;
+  min-height: 41vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px whitesmoke; }
+
+.box2 {
+  width: 20vw;
+  height: auto;
+  min-height: 83vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px whitesmoke; }
+
+#main {
+  margin-left: 35%; }
+
+#main h1 {
+  color: #fdfcfc; }
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 40.2%; }
+
+.text {
+  color: white;
+  padding: 2%;
+  font-size: 25px; }
+
+.text2 {
+  color: deeppink;
+  padding: 2%;
+  font-size: 21px;
+  font-family: Courier; }
+
+.box {
+  width: 30vw;
+  height: auto;
+  min-height: 34vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px red; }
+
+.box2 {
+  width: 22vw;
+  height: auto;
+  min-height: 78vh;
+  max-height: 100vh;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border: solid 2px red;
+  border-radius: 2%; }
+
+#main {
+  margin-left: 35%; }
+
+#main h1 {
+  color: yellow; }
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 40.2%; }
+
+.text {
+  color: white;
+  padding: 2%;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif; }
+
+.text2 {
+  color: yellow;
+  padding: 2%;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif; }
+
+/*# sourceMappingURL=maps/styles.css.map */
