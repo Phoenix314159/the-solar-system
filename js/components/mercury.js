@@ -28,10 +28,10 @@ angular.module('solar-system').component('mercury', {
                 $timeout(function () {
                     that.text += that.mercuryText[that.index]
                     that.index--;
-                    console.log(that.text);
+
                 }, 500);
 
-            }, 5, 483);
+            }, 50, 483);
         }
 
     }

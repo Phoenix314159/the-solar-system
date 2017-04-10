@@ -23,6 +23,19 @@ angular.module('solar-system').component('saturn', {
                 $interval.cancel(textAnim);
 
             }
+            that.displayTextReverse = function () {
+                that.show = true;
+                that.saturnText = mainService.saturnText;
+                that.index = that.saturnText.length - 1;
+                $interval(function () {
+                    $timeout(function () {
+                        that.text += that.saturnText[that.index]
+                        that.index--;
+                        console.log(that.text);
+                    }, 500);
+
+                }, 5, 483);
+            }
 
         }
     }

@@ -8,7 +8,7 @@ let gulp = require('gulp')
     , babel = require('gulp-babel')
     , es2015 = require('babel-preset-es2015')
 
-// , uglify = require('gulp-uglify')
+ // , uglify = require('gulp-uglify')
 
 gulp.task('build-css', function () {
     gulp.src('./styles/*')
