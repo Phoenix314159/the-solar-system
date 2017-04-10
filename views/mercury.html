@@ -1,11 +1,14 @@
 <link rel="stylesheet" href="../styles/mercuryStyle.css">
 <h1 ng-click="$ctrl.displayTextReverse()">Mercury</h1>
-<div id="main">
+<div id="main" class="animated flipInX">
 	<img class="animated bounceInLeft img-responsive" ng-click="$ctrl.displayText();
 		$ctrl.show = true" src="http://nineplanets.org/images/mercury.jpg"/>
 	<text-gray>
-		<div ng-show="$ctrl.show" class="box text animated zoomIn">
-			{{$ctrl.text}}
+		<div class="animated lightSpeedIn">
+			<div ng-show="$ctrl.show" class="box text  text4">
+				{{$ctrl.text}}
+			</div>
+			>
 		</div>
 	</text-gray>
 </div>

@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="../styles/saturnStyle.css">
-<div id="main">
+<div id="main" class="animated jello">
 	<h1 ng-click="$ctrl.displayTextReverse()">Saturn</h1>
 	<img class="animated lightSpeedIn img-responsive" ng-click="$ctrl.displayText()"
 	     src="https://i.imgsafe.org/d014ad8ab1.png"/>
 
-	<div ng-show="$ctrl.show" class="box text animated zoomInUp" ng-click="$ctrl.stop()">
+	<div id="text" ng-show="$ctrl.show" class="box text animated zoomInUp" ng-click="$ctrl.stop()">
 		{{$ctrl.text}}
 	</div>
 </div>

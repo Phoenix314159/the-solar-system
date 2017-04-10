@@ -36,7 +36,7 @@ button {
 }
 
 .text {
-    color: white;
+
     padding: 2%;
     font-size: 25px;
 }
@@ -51,4 +51,28 @@ button {
 h1 {
     margin-left: 35%;
     color: #fdfcfc;
+}
+.text4{
+    animation-name: text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        color: #00E676;
+    }
+    20% {
+        color: #8a1a00;
+    }
+    40% {
+        color: #5a95f5;
+    }
+    80% {
+        color: #8a1a00;
+    }
+    100% {
+        color: #1f6377;
+    }
+
 }

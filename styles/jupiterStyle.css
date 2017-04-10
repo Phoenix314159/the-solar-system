@@ -40,7 +40,7 @@ button {
 }
 
 .text {
-    color: white;
+
     padding: 2%;
     font-size: 25px;
 }
@@ -49,5 +49,29 @@ button {
     color: coral;
     padding: 2%;
     font-size: 25px;
+}
+#text{
+    animation-name: text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        color: #F44336;
+    }
+    20% {
+        color: #ec407a;
+    }
+    40% {
+        color: orangered;
+    }
+    80% {
+        color: #9a161a;
+    }
+    100% {
+        color: lightcoral;
+    }
+
 }
 

@@ -42,7 +42,7 @@ button {
 }
 
 .text {
-    color: white;
+
     padding: 2%;
     font-size: 25px;
 }
@@ -52,5 +52,29 @@ button {
     padding: 2%;
     font-size: 24px;
     font-family: 'Baloo Bhaina', cursive;
+}
+#text{
+    animation-name: text;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        color: #00acc1;
+    }
+    20% {
+        color: #2f92e7;
+    }
+    40% {
+        color: #faebcc;
+    }
+    80% {
+        color: #faebcc;
+    }
+    100% {
+        color: #4bb1cf;
+    }
+
 }
 

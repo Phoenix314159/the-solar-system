@@ -47,7 +47,7 @@ button {
 }
 
 .text {
-    color: white;
+
     padding: 2%;
     font-size: 25px;
 }
@@ -57,5 +57,29 @@ button {
     padding: 2%;
     font-size: 25px;
     font-family: "Helvetica Neue", "Open Sans", sans-serif;
+}
+#text{
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        color: #ec407a;
+    }
+    20% {
+        color: #FFFF00;
+    }
+    40% {
+        color: darkorange;
+    }
+    80% {
+        color: #faebcc;
+    }
+    100% {
+        color: chartreuse;
+    }
+
 }
 

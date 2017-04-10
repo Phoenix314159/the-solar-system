@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="../styles/marsStyle.css">
-<div id="main">
+<div id="main" class="animated bounceIn">
 	<h1>Mars</h1>
 
 	<img class="animated bounceInRight img-responsive"
 	     ng-click="$ctrl.displayText()" src="http://nineplanets.org/images/mars.jpg"/>
 
 	<text-red>
-		<div ng-show="$ctrl.show" class="box text animated zoomInRight">
+		<div id="text" ng-show="$ctrl.show" class="box text animated zoomInRight">
 			{{$ctrl.text}}
 		</div>
 	</text-red>

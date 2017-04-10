@@ -23,9 +23,10 @@ button {
 }
 
 .text {
-    color: white;
+
     padding: 2%;
     font-size: 25px;
+    font-style: oblique;
 }
 
 video {
@@ -36,4 +37,28 @@ video {
 h1 {
     color: red;
     margin-left: 35%;
+}
+#text{
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        color: #E3ABF2;
+    }
+    20% {
+        color: #ABF2D6;
+    }
+    40% {
+        color: #7888E6;
+    }
+    80% {
+        color: #90AA31;
+    }
+    100% {
+        color: #F7A18E;
+    }
+
 }

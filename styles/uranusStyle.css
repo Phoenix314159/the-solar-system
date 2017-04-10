@@ -40,7 +40,6 @@ button {
 }
 
 .text {
-    color: white;
     padding: 2%;
     font-size: 25px;
 }
@@ -50,4 +49,28 @@ button {
     padding: 2%;
     font-size: 21px;
     font-family: Courier;
+}
+#text{
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        color: #faebcc;
+    }
+    20% {
+        color: #faf2cc;
+    }
+    40% {
+        color: #00aaff;
+    }
+    80% {
+        color: #EEEEEE;
+    }
+    100% {
+        color: #3e8f3e;
+    }
+
 }

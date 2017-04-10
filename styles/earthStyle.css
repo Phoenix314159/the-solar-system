@@ -43,7 +43,7 @@ button {
 }
 
 .text {
-    color: white;
+
     padding: 2%;
     font-size: 25px;
 }
@@ -52,11 +52,36 @@ button {
     color: #00ffe9;
     padding: 2%;
     font-size: 25px;
+    font-family: 'Pacifico', cursive;
 }
 
 video {
     border-radius: 1%;
     border: 2px solid darkblue;
+}
+#text{
+    animation-name: text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        color: #00aaff;
+    }
+    20% {
+        color: #4a148c;
+    }
+    40% {
+        color: blueviolet;
+    }
+    80% {
+        color: #1a99e2;
+    }
+    100% {
+        color: #fce4ec;
+    }
+
 }
 
 

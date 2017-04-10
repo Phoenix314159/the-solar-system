@@ -12,8 +12,6 @@ angular.module('solar-system').component('neptune2', {
                     that.text += that.neptuneText2[that.index]
                     that.index++;
                 }, 700);
-
-
             }, 12, that.neptuneText2.length);
 
             that.stop = function () {

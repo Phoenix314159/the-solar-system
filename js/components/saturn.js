@@ -21,7 +21,6 @@ angular.module('solar-system').component('saturn', {
             }, 35, that.saturnText.length);
             that.stop = function () {
                 $interval.cancel(textAnim);
-
             }
             that.displayTextReverse = function () {
                 that.show = true;

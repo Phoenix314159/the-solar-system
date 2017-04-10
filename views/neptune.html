@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="../styles/neptuneStyle.css">
-<div id="main">
+<div id="main" class="animated flipInY">
 	<h1>Neptune</h1>
 	<img class="animated rotateInUpRight img-responsive" ng-click="$ctrl.displayText()"
 	     src="http://nineplanets.org/images/neptune.jpg"/>
 
 
-	<div ng-show="$ctrl.show" class="box text animated fadeIn">
+	<div id="text" ng-show="$ctrl.show" class="box text animated fadeIn">
 		{{$ctrl.text}}
 	</div>
 </div>

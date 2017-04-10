@@ -1,14 +1,13 @@
 <link rel="stylesheet" href="./styles/sunStyle.css">
-<h1>The Sun</h1>
-<div id="main">
+<h1 class="animated rubberBand">The Sun</h1>
+<div id="main" class="headShake">
 
 	<div><img class="animated rollIn img-responsive" ng-click="$ctrl.displayText()"
 	          src="http://nineplanets.org/images/thesun.jpg"/>
 	</div>
-	<text>
-		<div ng-show="$ctrl.show" class="box text animated slideInUp">
+	<text class="animated flipInX">
+		<div id="text" ng-show="$ctrl.show" class="box text animated flipInX">
 			{{$ctrl.text}}
-
 		</div>
 	</text>
 </div>
