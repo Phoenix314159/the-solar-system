@@ -6,7 +6,7 @@ let gulp = require('gulp')
     , cachebust = new CacheBuster()
     , print = require('gulp-print')
     , babel = require('gulp-babel')
-    , es2015 = require('babel-preset-es2015')
+    // , es2015 = require('babel-preset-es2015')
 
  // , uglify = require('gulp-uglify')
 
@@ -24,7 +24,7 @@ gulp.task('build-js', function () {
     return gulp.src('js/**/*.js')
         .pipe(sourcemaps.init())
         .pipe(print())
-        .pipe(babel({presets: ['es2015']}))
+        // .pipe(babel({presets: ['es2015']}))
         .pipe(concat('bundle.js'))
         // .pipe(uglify())
         .pipe(sourcemaps.write('./'))

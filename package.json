@@ -18,7 +18,7 @@
     "gulp-print": "^2.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-scss": "^1.4.0",
-    "gulp-sourcemaps": "^2.5.1",
+    "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^2.1.2",
     "planet-facts": "^0.1.0",
     "uglify": "^0.1.5"

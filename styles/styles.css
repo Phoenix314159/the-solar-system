@@ -10,37 +10,30 @@ body {
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin:0;
     padding: 0;
-    background-color: #0f0f0f;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: solid 2px blue;
+    background-color: #4d4d4c;
+    border: solid 2px blue;
 
 }
 
 li {
-    display: inline;
-    font-size: 31px;
-    font-family: FontAwesome, bold;
+    font-size: 2em;
+    font-family: "Malgun Gothic Semilight";
+
 }
 
 li a {
-    display: inline;
-    color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
 }
 
 li a:hover {
-    background-color: #BBDEFB;
+    background-color: #8a1a00;
 }
 
 .active {
-    color: #990000;
-    font-size: 33px;
+    font-size: 2.5em;
     text-decoration: underline;
 }
 
@@ -49,4 +42,6 @@ li a:hover {
     -ms-transform: scale(1.3);
     transform: scale(1.3);
 }
-
+nav{
+    width:100vw;
+}
