@@ -19,12 +19,13 @@ ul {
 
 li {
     font-size: 2em;
-    font-family: "Malgun Gothic Semilight";
+    font-family: 'Press Start 2P',bold;
+    font-style: oblique;
 
 }
 
 li a {
-    padding: 14px 16px;
+    padding: 18px 20px;
     text-decoration: none;
 }
 

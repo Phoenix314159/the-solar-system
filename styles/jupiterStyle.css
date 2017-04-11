@@ -1,7 +1,7 @@
 .box {
     width: 32vw;
     height: auto;
-    min-height: 34vh;
+    min-height: 36vh;
     max-height: inherit;
     background-color: #0f0f0f;
     position: relative;
@@ -15,7 +15,7 @@
 .box2 {
     width: 21vw;
     height: auto;
-    min-height: 80vh;
+    min-height: 77vh;
     max-height: inherit;
     background-color: #0f0f0f;
     position: absolute;

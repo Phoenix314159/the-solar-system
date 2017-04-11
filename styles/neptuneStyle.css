@@ -1,13 +1,12 @@
 .box {
     width: 28vw;
     height: auto;
-    min-height: 41vh;
+    min-height: 39vh;
     max-height: inherit;
     background-color: #0f0f0f;
     position: relative;
     right: 7%;
     margin-top: 2%;
-    max-height: 75vh;
     border-radius: 2%;
     border: solid 2px #1b6d85;
 
@@ -16,7 +15,7 @@
 .box2 {
     width: 22vw;
     height: auto;
-    min-height: 83vh;
+    min-height: 81vh;
     max-height: inherit;
     background-color: #0f0f0f;
     position: absolute;
