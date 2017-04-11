@@ -16,7 +16,7 @@
     width: 22vw;
     height: auto;
     min-height: 78vh;
-    max-height: 100vh;
+    max-height: inherit;
     background-color: #0f0f0f;
     position: absolute;
     left: 6%;
