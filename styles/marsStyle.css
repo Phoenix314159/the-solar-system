@@ -75,4 +75,6 @@ button {
     }
 
 }
-
+audio {
+    display:none;
+}

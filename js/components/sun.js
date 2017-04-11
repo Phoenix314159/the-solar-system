@@ -6,6 +6,7 @@ angular.module('solar-system').component('sun', {
         let that = this;
         that.show = false;
         that.text = "";
+
         that.displayText = function () {
             that.show = true;
             that.index = 0;
