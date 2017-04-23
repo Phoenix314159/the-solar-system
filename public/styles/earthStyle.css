@@ -1,0 +1,177 @@
+
+
+
+.box {
+    width: 30vw;
+    min-height: 35vh;
+    height: auto;
+    max-height: inherit;
+    background-color: #0f0f0f;
+    position: relative;
+    right: 6%;
+    margin-top: 2%;
+    border-radius: 2%;
+    border: solid 2px blue;
+
+}
+
+.box2 {
+    width: 20vw;
+    height: auto;
+    min-height: 72vh;
+    max-height: inherit;
+    background-color: #0f0f0f;
+    position: absolute;
+    left: 6%;
+    top: 10%;
+    border-radius: 2%;
+    border: solid 2px blue;
+}
+
+#main {
+    margin-left: 35%;
+}
+
+#main h1 {
+    color: #00b0ff;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 40.2%;
+}
+
+.text {
+
+    padding: 2%;
+    font-size: 1.8em;
+}
+
+.text2 {
+    color: #00ffe9;
+    padding: 2%;
+    font-size: 1.8em;
+    font-family: 'Pacifico', cursive;
+}
+
+video {
+    border-radius: 1%;
+    border: 2px solid darkblue;
+}
+#text{
+    animation-name: text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        color: #00aaff;
+    }
+    20% {
+        color: #4a148c;
+    }
+    40% {
+        color: blueviolet;
+    }
+    80% {
+        color: #1a99e2;
+    }
+    100% {
+        color: #fce4ec;
+    }
+
+}
+audio {
+    display:none;
+}
+@media only screen and (max-width: 320px) {
+    .box2{
+        width: 24vw;
+        text-wrap: normal;
+        overflow: hidden;
+        position: absolute;
+        top:3%;
+        right:3%;
+    }
+    .box{
+        width: 50vw;
+        margin-top: 10%;
+        height: auto;
+        max-height: inherit;
+        min-height: 16vh;
+    }
+    video{
+        position: relative;
+        right:2%;
+        width:280px;
+        height: 250px;
+    }
+    .text2{
+        font-size: .8em;
+    }
+    .text{
+        font-size: .8em;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .text2{
+        font-size: .8em;
+    }
+    .text{
+        font-size: .8em;
+    }
+    .box2{
+        width: 24vw;
+        text-wrap: normal;
+        overflow: hidden;
+        position: absolute;
+        top:3%;
+        right:3%;
+    }
+    .box{
+        width: 50vw;
+        margin-top: 10%;
+        height: auto;
+        max-height: inherit;
+        min-height: 16vh;
+    }
+    video{
+        position: relative;
+        right:2%;
+        width:280px;
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .text2{
+        font-size: 1em;
+    }
+    .text{
+        font-size: 1em;
+    }
+    .box2{
+        width: 24vw;
+        text-wrap: normal;
+        overflow: hidden;
+        position: absolute;
+        top:3%;
+        right:3%;
+    }
+    .box{
+        width: 50vw;
+        margin-top: 10%;
+        height: auto;
+        max-height: inherit;
+        min-height: 16vh;
+    }
+    video{
+        position: relative;
+        right:2%;
+        width:280px;
+        height: 250px;
+    }
+}
+
+
