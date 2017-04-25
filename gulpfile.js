@@ -6,9 +6,9 @@ let gulp = require('gulp')
     , cachebust = new CacheBuster()
     , print = require('gulp-print')
     , babel = require('gulp-babel')
-    // , es2015 = require('babel-preset-es2015')
-
- // , uglify = require('gulp-uglify')
+    , es2015 = require('babel-preset-es2015')
+    , ngAnnotate = require('gulp-ng-annotate')
+    , uglify = require('gulp-uglify');
 
 gulp.task('build-css', function () {
     gulp.src('./styles/*')
@@ -24,11 +24,12 @@ gulp.task('build-js', function () {
     return gulp.src('public/js/**/*.js')
         .pipe(sourcemaps.init())
         .pipe(print())
-        // .pipe(babel({presets: ['es2015']}))
+        .pipe(babel({presets: ['es2015']}))
         .pipe(concat('bundle.js'))
-        // .pipe(uglify())
+        .pipe(ngAnnotate())
+         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./dist/js'));
+        .pipe(gulp.dest('./public/dist/js'));
 });
 
 gulp.task('build', ['build-css', 'build-js'], function () {

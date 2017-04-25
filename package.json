@@ -17,6 +17,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-cachebust": "0.0.6",
     "gulp-concat": "^2.6.1",
+    "gulp-ng-annotate": "^2.0.0",
     "gulp-print": "^2.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-scss": "^1.4.0",
@@ -34,5 +35,8 @@
     "url": "https://github.com/Phoenix314159/the-solar-system/issues"
   },
   "homepage": "https://github.com/Phoenix314159/the-solar-system#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
 }
