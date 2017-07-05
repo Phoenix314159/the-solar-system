@@ -1,7 +1,9 @@
-const app = require('./server')
-    , massive = require('massive')
-    , connectionString = "postgres://postgres@localhost/solar-system"
-    , massiveInstance = massive.connectSync({connectionString: connectionString});
+const app = require('./server'),
+    massive = require('massive'),
+    config = require('./config'),
+    connString = config.MASSIVE_URI,
+    massiveInstance = massive.connectSync({connectionString: connString});
+
 app.set('db', massiveInstance);
 const db = app.get('db');
 

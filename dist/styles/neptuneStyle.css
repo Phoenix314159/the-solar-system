@@ -1,0 +1,82 @@
+.box {
+    width: 28vw;
+    height: auto;
+    min-height: 39vh;
+    max-height: inherit;
+    background-color: #0f0f0f;
+    position: relative;
+    right: 7%;
+    margin-top: 2%;
+    border-radius: 2%;
+    border: solid 2px #1b6d85;
+
+}
+
+.box2 {
+    width: 22vw;
+    height: auto;
+    min-height: 81vh;
+    max-height: inherit;
+    background-color: #0f0f0f;
+    position: absolute;
+    left: 6%;
+    top: 10%;
+    max-height: 100%;
+    border-radius: 2%;
+    border: solid 2px #1b6d85;
+}
+
+#main {
+    margin-left: 35%;
+}
+
+#main h1 {
+    color: #00b0ff;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 40.2%;
+}
+
+.text {
+
+    padding: 2%;
+    font-size: 25px;
+}
+
+.text2 {
+    color: #42A5F5;
+    padding: 2%;
+    font-size: 24px;
+    font-family: 'Baloo Bhaina', cursive;
+}
+#text{
+    animation-name: text;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        color: #00acc1;
+    }
+    20% {
+        color: #2f92e7;
+    }
+    40% {
+        color: #faebcc;
+    }
+    80% {
+        color: #faebcc;
+    }
+    100% {
+        color: #4bb1cf;
+    }
+
+}
+audio {
+    display:none;
+}
+
