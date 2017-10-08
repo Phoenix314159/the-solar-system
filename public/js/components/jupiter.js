@@ -7,14 +7,14 @@ angular.module('solar-system').component('jupiter', {
         that.show = false;
         that.text = "";
         that.showMe = true;
-        that.displayText = function () {
+        that.displayText = () => {
             that.show = true;
             that.index = 0;
              mainService.jupiterText().then(response => {
                 that.jupiterText = response.data[0].info1;
 
                 let textAnim = $interval(function () { //461
-                     $timeout(function () {
+                     $timeout(() => {
                          that.text += that.jupiterText[that.index]
                          that.index++;
 

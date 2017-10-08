@@ -10,9 +10,10 @@ angular.module('solar-system').component('mercury', {
             that.show = true;
             that.index = 0;
             mainService.mercuryText().then(response => {
+                console.log(response);
                 that.mercuryText = response.data[0].info1;
-                $interval(function () { //542
-                    $timeout(function () {
+                $interval(() => { //542
+                    $timeout(() => {
                         that.text += that.mercuryText[that.index]
                         that.index++;
                     }, 480);

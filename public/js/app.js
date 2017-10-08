@@ -1,5 +1,5 @@
 angular.module('solar-system', ['ui.router'])
-    .config(function ($urlRouterProvider, $stateProvider) {
+    .config(function ($stateProvider, $urlRouterProvider ) {
         $stateProvider
             .state('sun', {
                 url: '/sun',
@@ -52,4 +52,4 @@ angular.module('solar-system', ['ui.router'])
             });
         $urlRouterProvider.otherwise('/');
 
-    })
+    });

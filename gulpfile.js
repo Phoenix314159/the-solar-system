@@ -9,7 +9,7 @@ const gulp = require('gulp'),
      ngAnnotate = require('gulp-ng-annotate'),
      uglify = require('gulp-uglify'),
      htmlmin = require('gulp-htmlmin'),
-     cssmin = require('gulp-cssmin')
+     cssmin = require('gulp-cssmin');
 
 
 gulp.task('build-js', () => {
@@ -22,32 +22,32 @@ gulp.task('build-js', () => {
         // .pipe(uglify())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./dist/js'));
-})
-// gulp.task('build-css', () => {
-//     return gulp.src('./client/styles/**/*')
-//         .pipe(sourcemaps.init())
-//         .pipe(print())
-//         .pipe(sass())
-//         .pipe(cachebust.resources())
-//         .pipe(concat('styles.min.css'))
-//         .pipe(cssmin())
-//         .pipe(sourcemaps.write('./maps'))
-//         .pipe(gulp.dest('./dist/styles'))
-// })
+});
+gulp.task('build-css', () => {
+    return gulp.src('./client/styles/**/*')
+        .pipe(sourcemaps.init())
+        .pipe(print())
+        .pipe(sass())
+        .pipe(cachebust.resources())
+        .pipe(concat('styles.min.css'))
+        .pipe(cssmin())
+        .pipe(sourcemaps.write('./maps'))
+        .pipe(gulp.dest('./dist/styles'))
+});
 gulp.task('views', () => {
     return gulp.src('./public/views/**/*')
         .pipe(print())
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist/views'))
-})
+});
 
 gulp.task('build', ['build-js', 'views'], () => {
     return gulp.src('./public/index.html')
         .pipe(cachebust.references())
         .pipe(gulp.dest('dist'));
-})
+});
 gulp.task('default', ['build']);
 
 gulp.task('watch', function () {
     return gulp.watch(['./index.html', './styles/*.*css', './js/**/*.js'], ['build']);
-})
+});
