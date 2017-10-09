@@ -1,17 +1,12 @@
-<link rel="stylesheet" href="../styles/venusStyle.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 <audio autoplay="autoplay" loop="loop">
 	<source src="./audio/venusSynth.wav" type="audio/mpeg">
 </audio>
-<div id="main" class="animated headShake">
-	<h1>Venus</h1>
+<h1 class="venusHeader">Venus</h1>
+<div id="venusMain" class="animated headShake">
 	<img ng-click="$ctrl.displayText()"
 	     class="animated bounceInRight img-responsive" src="http://nineplanets.org/images/venus.jpg"/>
-	<div id="text" ng-show="$ctrl.show" class="box text animated fadeIn">
-
+	<div id="venusText" ng-show="$ctrl.show" class="venusBox venusText animated fadeIn">
 		{{$ctrl.text}}
-
 	</div>
 </div>
-<venus2 class="box2 text2  animated slideInDown" ng-show="$ctrl.show"></venus2>
+<venus2 class="venusBox2 venusText2  animated slideInDown" ng-show="$ctrl.show"></venus2>

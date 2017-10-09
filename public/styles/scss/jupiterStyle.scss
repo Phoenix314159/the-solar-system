@@ -1,0 +1,77 @@
+.jupiterBox {
+  width: 32vw;
+  height: auto;
+  min-height: 36vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px darkred;
+
+}
+.jupiterHeader {
+  color: orangered;
+}
+
+.jupiterBox2 {
+  width: 21vw;
+  height: auto;
+  min-height: 77vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px darkred;
+}
+
+#jupiterMain {
+  margin-left: 35%;
+  h1 {
+    color: #B71C1C;
+  }
+}
+
+.jupiterText {
+  padding: 2%;
+  font-size: 25px;
+}
+
+.jupiterText2 {
+  color: coral;
+  padding: 2%;
+  font-size: 25px;
+}
+
+#jupiterText {
+  animation-name: jupiterText;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jupiterText {
+  0% {
+    color: #F44336;
+  }
+  20% {
+    color: #ec407a;
+  }
+  40% {
+    color: orangered;
+  }
+  80% {
+    color: #9a161a;
+  }
+  100% {
+    color: lightcoral;
+  }
+
+}
+
+audio {
+  display: none;
+}
+

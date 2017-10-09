@@ -1,23 +1,19 @@
-
-<link rel="stylesheet" href="../styles/jupiterStyle.css">
 <audio autoplay="autoplay" loop="loop">
-	<source src="./audio/jupiterSynth.wav" type="audio/mpeg">
+    <source src="./audio/jupiterSynth.wav" type="audio/mpeg">
 </audio>
-<div id="main" class="animated headShake">
-	<h1>Jupiter</h1>
-	<div class="view overlay hm-zoom">
-		<img class="animated rotateInUpLeft img-responsive" ng-click="$ctrl.displayText()"
-		     src="http://nineplanets.org/images/jupiter.jpg"/>
-
-	</div>
-
-	<text>
-		<div id="text" ng-show="$ctrl.show" class="box text animated zoomInLeft" ng-click="$ctrl.stop()">
-			{{$ctrl.text}}
-
-		</div>
-	</text>
+<h1 class="jupiterHeader">Jupiter</h1>
+<div id="jupiterMain" class="animated headShake">
+    <div class="view overlay hm-zoom">
+        <img class="animated rotateInUpLeft img-responsive" ng-click="$ctrl.displayText()"
+             src="http://nineplanets.org/images/jupiter.jpg"/>
+    </div>
+    <text>
+        <div id="jupiterText" ng-show="$ctrl.show" class="jupiterBox jupiterText animated zoomInLeft"
+             ng-click="$ctrl.stop()">
+            {{$ctrl.text}}
+        </div>
+    </text>
 </div>
 <text>
-	<jupiter2 class="box2 text2  animated rotateInDownLeft" ng-show="$ctrl.show"></jupiter2>
+    <jupiter2 class="jupiterBox2 jupiterText2 animated rotateInDownLeft" ng-show="$ctrl.show"></jupiter2>
 </text>

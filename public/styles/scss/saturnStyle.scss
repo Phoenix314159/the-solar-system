@@ -1,0 +1,83 @@
+.saturnBox {
+  width: 30vw;
+  height: auto;
+  min-height: 41vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px yellowgreen;
+
+}
+.saturnHeader {
+  color: #76ff03;
+}
+
+.saturnBox2 {
+  width: 22vw;
+  height: auto;
+  min-height: 75vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px yellowgreen;
+}
+
+#saturnMain {
+  margin-left: 35%;
+  h1 {
+    color: #89be50;
+  }
+  img {
+    height: 50%;
+    width: 50%;
+    margin-right: 10%;
+  }
+}
+
+.saturnText {
+  padding: 2%;
+  font-size: 25px;
+}
+
+.saturnText2 {
+  color: #007E33;
+  padding: 2%;
+  font-size: 25px;
+  font-family: "Helvetica Neue", "Open Sans", sans-serif;
+}
+
+#saturnText {
+  animation-name: saturnText;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes saturnText {
+  0% {
+    color: #ec407a;
+  }
+  20% {
+    color: #FFFF00;
+  }
+  40% {
+    color: darkorange;
+  }
+  80% {
+    color: #faebcc;
+  }
+  100% {
+    color: chartreuse;
+  }
+
+}
+
+audio {
+  display: none;
+}
+

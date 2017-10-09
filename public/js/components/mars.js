@@ -6,22 +6,19 @@ angular.module('solar-system').component('mars', {
         let that = this;
         that.show = false;
         that.text = "";
-        that.displayText = function () {
+        that.displayText = async () => {
             that.show = true;
             that.index = 0;
-            mainService.marsText().then(response => {
-                that.marsText = response.data[0].info1;
-                $interval(function () {
+            let response = await mainService.marsText();
+            that.marsText = response.data[0].info1;
+            $interval(function () {
+                $timeout(function () {
                     $timeout(function () {
-                        $timeout(function () {
-                            that.text += that.marsText[that.index]
-                            that.index++;
-                        }, 20)
-                        ;
-                    }, 500);
-
-                }, 30, that.marsText.length);
-            })
+                        that.text += that.marsText[that.index]
+                        that.index++;
+                    }, 20)
+                }, 500);
+            }, 30, that.marsText.length);
         }
     }
 });

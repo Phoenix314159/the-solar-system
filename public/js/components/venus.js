@@ -6,18 +6,17 @@ angular.module('solar-system').component('venus', {
         let that = this;
         that.show = false;
         that.text = "";
-        that.displayText = function () {
+        that.displayText = async () => {
             that.show = true;
             that.index = 0;
-             mainService.venusText().then(response => {
-                that.venusText = response.data[0].info1;
-                 $interval(function () {
-                     $timeout(function () {
-                         that.text += that.venusText[that.index]
-                         that.index++;
-                     }, 500)
-                 }, 30, that.venusText.length);
-            });
+            let response = await mainService.venusText();
+            that.venusText = response.data[0].info1;
+            $interval(() => {
+                $timeout(() => {
+                    that.text += that.venusText[that.index];
+                    that.index++;
+                }, 500)
+            }, 30, that.venusText.length);
         };
     }
-})
+});

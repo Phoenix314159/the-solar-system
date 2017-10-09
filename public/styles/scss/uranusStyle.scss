@@ -1,0 +1,74 @@
+.uranusBox {
+  width: 30vw;
+  height: auto;
+  min-height: 41vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px whitesmoke;
+
+}
+
+.uranusBox2 {
+  width: 20vw;
+  height: auto;
+  min-height: 83vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px whitesmoke;
+}
+
+#uranusMain {
+  margin-left: 35%;
+  h1 {
+    color: #fdfcfc;
+  }
+}
+
+.uranusText {
+  padding: 2%;
+  font-size: 25px;
+}
+
+.uranusText2 {
+  color: deeppink;
+  padding: 2%;
+  font-size: 21px;
+  font-family: Courier;
+}
+
+#uranusText {
+  animation-name: uranusText;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes uranusText {
+  0% {
+    color: #faebcc;
+  }
+  20% {
+    color: #faf2cc;
+  }
+  40% {
+    color: #00aaff;
+  }
+  80% {
+    color: #EEEEEE;
+  }
+  100% {
+    color: #3e8f3e;
+  }
+
+}
+
+audio {
+  display: none;
+}

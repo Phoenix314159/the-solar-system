@@ -7,30 +7,22 @@ angular.module('solar-system').component('jupiter', {
         that.show = false;
         that.text = "";
         that.showMe = true;
-        that.displayText = () => {
+        that.displayText = async () => {
             that.show = true;
             that.index = 0;
-             mainService.jupiterText().then(response => {
-                that.jupiterText = response.data[0].info1;
+            let response = await mainService.jupiterText();
+            that.jupiterText = response.data[0].info1;
 
-                let textAnim = $interval(function () { //461
-                     $timeout(() => {
-                         that.text += that.jupiterText[that.index]
-                         that.index++;
-
-                     }, 570);
-
-
-                 }, 26, that.jupiterText.length);
-                 that.stop = function () {
-                     $interval.cancel(textAnim);
-                     that.showMe = false;
-                 }
-
-             });
-
+            let textAnim = $interval(() => { //461
+                $timeout(() => {
+                    that.text += that.jupiterText[that.index];
+                    that.index++;
+                }, 570);
+            }, 26, that.jupiterText.length);
+            that.stop = () => {
+                $interval.cancel(textAnim);
+                that.showMe = false;
+            }
         }
-
     }
-
-})
+});

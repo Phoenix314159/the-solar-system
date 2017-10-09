@@ -1,0 +1,79 @@
+.venusBox {
+  width: 30vw;
+  height: auto;
+  min-height: 35vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px red;
+}
+
+.venusHeader {
+  color: yellow;
+}
+
+.venusBox2 {
+  width: 22vw;
+  height: auto;
+  min-height: 78vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border: solid 2px red;
+  border-radius: 2%;
+}
+
+#venusMain {
+  margin-left: 35%;
+  h1 {
+    color: yellow;
+  }
+}
+
+.venusText {
+  padding: 2%;
+  font-size: 25px;
+
+}
+
+.venusText2 {
+  color: yellow;
+  padding: 2%;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#venusText {
+  animation-name: venusText;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes venusText {
+  0% {
+    color: #00d255;
+  }
+  20% {
+    color: #5eb95e;
+  }
+  40% {
+    color: #8bc34a;
+  }
+  80% {
+    color: #d4e157;
+  }
+  100% {
+    color: #FFFF99;
+  }
+
+}
+
+audio {
+  display: none;
+}
+

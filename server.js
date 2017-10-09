@@ -6,9 +6,10 @@ const express = require('express'),
 require('./middleware/middleware')(app);
 require('./routes/routes')(app);
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'dist')));
+
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/dist/index.html');
 });
 app.listen(config.port, () => {
     console.log(`listening on port ${config.port}`)

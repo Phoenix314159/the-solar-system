@@ -1,0 +1,74 @@
+
+.marsBox {
+  width: 32vw;
+  height: auto;
+  min-height: 34vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: relative;
+  right: 7%;
+  margin-top: 2%;
+  border-radius: 2%;
+  border: solid 2px orangered;
+
+}
+.marsHeader {
+  color: red;
+}
+
+.marsBox2 {
+  width: 21vw;
+  height: auto;
+  min-height: 76vh;
+  max-height: inherit;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 6%;
+  top: 10%;
+  border-radius: 2%;
+  border: solid 2px orangered;
+}
+
+#marsMain {
+  margin-left: 35%;
+}
+
+.marsText {
+  padding: 1.5%;
+  font-size: 25px;
+}
+
+.marsText2 {
+  color: #C21F39;
+  padding: 1.5%;
+  font-size: 25px;
+}
+
+#marsText {
+  animation-name: marsText;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marsText {
+  0% {
+    color: #9a161a;
+  }
+  20% {
+    color: #fce4ec;
+  }
+  40% {
+    color: #ed0409;
+  }
+  80% {
+    color: #F44336;
+  }
+  100% {
+    color: darkred;
+  }
+
+}
+
+audio {
+  display: none;
+}

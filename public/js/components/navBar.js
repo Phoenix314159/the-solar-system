@@ -36,7 +36,7 @@ angular.module('solar-system').component('navBar', {
         let vm = this;
         vm.show2 = true;
 
-        vm.isActive = function (des) {
+        vm.isActive = des => {
             return des === $location.path();
         }
     }

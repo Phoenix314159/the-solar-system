@@ -2,21 +2,21 @@ angular.module('solar-system').component('earth', {
     templateUrl: './views/earth.html',
 
     controller: function (mainService, $interval, $timeout) {
-        let that = this;
-        that.show = false;
-        that.text = "";
-        that.displayText = () => {
-            that.show = true;
-            that.index = 0;
-            mainService.earthText().then(response => {
-                that.earthText = response.data[0].info1;
-                $interval(() => { //464
-                    $timeout(() => {
-                        that.text += that.earthText[that.index];
-                        that.index++;
-                    }, 1000)
-                }, 25, that.earthText.length);
-            });
+        let vm = this;
+        vm.show = false;
+        vm.text = "";
+        vm.displayText = async () => {
+            vm.show = true;
+            vm.index = 0;
+            let response = await mainService.earthText();
+            vm.earthText = response.data[0].info1;
+            $interval(() => { //464
+                $timeout(() => {
+                    vm.text += vm.earthText[that.index];
+                    vm.index++;
+                }, 1000)
+            }, 25, vm.earthText.length);
+
         }
     }
-})
+});

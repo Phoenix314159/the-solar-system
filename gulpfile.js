@@ -1,53 +1,58 @@
 const gulp = require('gulp'),
-     sourcemaps = require('gulp-sourcemaps'),
-     concat = require('gulp-concat'),
-     CacheBuster = require('gulp-cachebust'),
-     cachebust = new CacheBuster(),
-     print = require('gulp-print'),
-     babel = require('gulp-babel'),
-     es2015 = require('babel-preset-es2015'),
-     ngAnnotate = require('gulp-ng-annotate'),
-     uglify = require('gulp-uglify'),
-     htmlmin = require('gulp-htmlmin'),
-     cssmin = require('gulp-cssmin');
+    $ = require('gulp-load-plugins')({
+        pattern: ['gulp-*'],
+        replaceString: /\bgulp[\-.]/,
+        lazy: true,
+        camelize: true
+    }),
+    cachebust = new $.cachebust(),
+    transforms = [{
+        transform: "babelify",
+        options: {presets: ["es2017"]}
+    }],
+    pump = require('pump');
 
 
-gulp.task('build-js', () => {
-    return gulp.src('./public/js/**/*.js')
-        .pipe(sourcemaps.init())
-        .pipe(print())
-        .pipe(babel({presets: ['es2015']}))
-        .pipe(concat('bundle.js'))
-        .pipe(ngAnnotate())
-        // .pipe(uglify())
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./dist/js'));
+gulp.task('build-js', function (cb) {
+    pump([gulp.src('./public/js/**/*.js'),
+        $.sourcemaps.init(),
+        $.browser.browserify(transforms),
+        $.print(),
+        $.concat('bundle.js'),
+        $.ngAnnotate(),
+        $.sourcemaps.write('./'),
+        gulp.dest('dist/js')
+    ], cb)
 });
+
 gulp.task('build-css', () => {
-    return gulp.src('./client/styles/**/*')
-        .pipe(sourcemaps.init())
-        .pipe(print())
-        .pipe(sass())
+    return gulp.src(['./public/styles/css/**/*', './public/styles/scss/**/*'])
+        .pipe($.sourcemaps.init())
+        .pipe($.print())
         .pipe(cachebust.resources())
-        .pipe(concat('styles.min.css'))
-        .pipe(cssmin())
-        .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('./dist/styles'))
+        .pipe($.sass())
+        .pipe($.concat('styles.min.css'))
+        .pipe($.cssmin())
+        .pipe($.sourcemaps.write('./maps'))
+        .pipe(gulp.dest('dist/styles'))
 });
+
 gulp.task('views', () => {
     return gulp.src('./public/views/**/*')
-        .pipe(print())
-        .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('./dist/views'))
+        .pipe($.print())
+        .pipe($.htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('dist/views'))
 });
 
-gulp.task('build', ['build-js', 'views'], () => {
+gulp.task('build', ['build-js', 'views', 'build-css'], () => {
     return gulp.src('./public/index.html')
         .pipe(cachebust.references())
+        .pipe($.htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('dist'));
 });
-gulp.task('default', ['build']);
 
-gulp.task('watch', function () {
-    return gulp.watch(['./index.html', './styles/*.*css', './js/**/*.js'], ['build']);
+gulp.task('watch', () => {
+    return gulp.watch(['./public/index.html', './public/styles/css/*.css', './public/styles/scss/*.scss', './public/js/**/*.js'], ['build']);
 });
+
+gulp.task('default', ['build', 'watch']);

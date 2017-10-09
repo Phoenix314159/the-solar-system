@@ -3,35 +3,32 @@ angular.module('solar-system').component('mercury2', {
     controller: function ($interval, $timeout, mainService) {
         let that = this;
         that.text = "";
-        that.displayText2 = function () {
+        that.displayText2 = async () => {
             that.show = true;
             that.index = 0;
-            mainService.mercuryText2().then(response => {
-                that.mercuryText2 = response.data[0].info2;
-                $interval(function () {
-                    $timeout(function () {
-                        that.text += that.mercuryText2[that.index]
-                        that.index++;
-                    }, 700);
-                }, 22, that.mercuryText2.length);
-            });
-        }
-        that.displayTextReverse = function () {
+            let response = await mainService.mercuryText2();
+            that.mercuryText2 = response.data[0].info2;
+            $interval(() => {
+                $timeout(() => {
+                    that.text += that.mercuryText2[that.index]
+                    that.index++;
+                }, 700);
+            }, 22, that.mercuryText2.length);
+        };
+        that.displayTextReverse = async () => {
             that.show = true;
-            mainService.mercuryText2().then(response => {
-                that.mercuryText2 = response.data[0].info2;
-                    that.index = that.mercuryText2.length - 1;
-                $interval(function () {
-                    $timeout(function () {
-                        that.text += that.mercuryText2[that.index]
-                        that.index--;
-                        console.log(that.text);
-                    }, 500);
-                }, 5, 483);
-            });
-        }
-        $timeout(function () {
+            let response = await  mainService.mercuryText2();
+            that.mercuryText2 = response.data[0].info2;
+            that.index = that.mercuryText2.length - 1;
+            $interval(() => {
+                $timeout(() => {
+                    that.text += that.mercuryText2[that.index]
+                    that.index--;
+                }, 500);
+            }, 5, 483);
+        };
+        $timeout(() => {
             that.displayText2();
         }, 1500)
     }
-})
+});

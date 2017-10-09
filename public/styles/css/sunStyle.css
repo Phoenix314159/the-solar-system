@@ -1,0 +1,57 @@
+.sunBox {
+    width: 30vw;
+    min-height: 35vh;
+    height: auto;
+    background-color: #0f0f0f;
+    position: relative;
+    right: 7%;
+    max-height: 70vh;
+    margin-top: 2%;
+    border-radius: 2%;
+    border: solid 2px coral;
+
+}
+
+#sunMain {
+    margin-left: 35%;
+}
+
+.sunText {
+    padding: 2%;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.sunHeader {
+    color: red;
+    margin-left: 35%;
+}
+
+#sunText {
+    animation-name: sunText;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sunText {
+    0% {
+        color: #E3ABF2;
+    }
+    20% {
+        color: #ABF2D6;
+    }
+    40% {
+        color: #7888E6;
+    }
+    80% {
+        color: #90AA31;
+    }
+    100% {
+        color: #F7A18E;
+    }
+
+}
+
+audio {
+    display: none;
+}

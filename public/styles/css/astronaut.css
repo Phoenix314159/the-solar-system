@@ -1,0 +1,44 @@
+.astroMan {
+    height: 28%;
+    width: 12%;
+    position: fixed;
+    animation-name: astroAnimate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes astroAnimate {
+    0% {
+        bottom: 60vh;
+        right: 2vw;
+    }
+    20% {
+        bottom: 35vh;
+        right: 12vw;
+
+    }
+    40% {
+        bottom: 50vh;
+        right: 2vw;
+    }
+    80% {
+        bottom: 10vh;
+        right: 13vw;
+
+    }
+    100% {
+        bottom: 10vh;
+        right: 1vw;
+    }
+
+}
+@media only screen and (max-width: 320px) {
+    .astroMan{
+        height: 15%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .astroMan{
+        height: 20%;
+    }
+}

@@ -1,20 +1,16 @@
-
-<link rel="stylesheet" href="../styles/marsStyle.css">
 <audio autoplay="autoplay" loop="loop">
-	<source src="./audio/marsSynth.wav" type="audio/mpeg">
+    <source src="./audio/marsSynth.wav" type="audio/mpeg">
 </audio>
-<div id="main" class="animated bounceIn">
-	<h1>Mars</h1>
-
-	<img class="animated bounceInRight img-responsive"
-	     ng-click="$ctrl.displayText()" src="http://nineplanets.org/images/mars.jpg"/>
-
-	<text-red>
-		<div id="text" ng-show="$ctrl.show" class="box text animated zoomInRight">
-			{{$ctrl.text}}
-		</div>
-	</text-red>
+<h1 class="marsHeader">Mars</h1>
+<div id="marsMain" class="animated bounceIn">
+    <img class="animated bounceInRight img-responsive"
+         ng-click="$ctrl.displayText()" src="http://nineplanets.org/images/mars.jpg"/>
+    <text-red>
+        <div id="marsText" ng-show="$ctrl.show" class="marsBox marsText animated zoomInRight">
+            {{$ctrl.text}}
+        </div>
+    </text-red>
 </div>
 <text-red>
-	<mars2 class="box2 text2  animated zoomIn" ng-show="$ctrl.show"></mars2>
+    <mars2 class="marsBox2 marsText2 animated zoomIn" ng-show="$ctrl.show"></mars2>
 </text-red>
