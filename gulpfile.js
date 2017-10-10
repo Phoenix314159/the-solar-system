@@ -8,21 +8,20 @@ const gulp = require('gulp'),
     cachebust = new $.cachebust(),
     transforms = [{
         transform: "babelify",
-        options: {presets: ["es2017"]}
-    }],
-    pump = require('pump');
+        options: {presets: ['es2017']}
+    }];
 
 
-gulp.task('build-js', function (cb) {
-    pump([gulp.src('./public/js/**/*.js'),
-        $.sourcemaps.init(),
-        $.browser.browserify(transforms),
-        $.print(),
-        $.concat('bundle.js'),
-        $.ngAnnotate(),
-        $.sourcemaps.write('./'),
-        gulp.dest('dist/js')
-    ], cb)
+
+gulp.task('build-js', () => {
+    return gulp.src('./public/js/**/*.js')
+        .pipe($.sourcemaps.init())
+        .pipe($.browser.browserify(transforms))
+        .pipe($.print())
+        .pipe($.concat('bundle.js'))
+        .pipe($.ngAnnotate())
+        .pipe($.sourcemaps.write('./'))
+        .pipe(gulp.dest('dist/js'))
 });
 
 gulp.task('build-css', () => {
