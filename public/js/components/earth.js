@@ -16,7 +16,6 @@ angular.module('solar-system').component('earth', {
                     vm.index++;
                 }, 1000)
             }, 25, vm.earthText.length);
-
         }
     }
 });
